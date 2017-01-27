@@ -357,6 +357,8 @@ file per date in the `log/` directory using the
 
 Một ứng dụng đơn giản mà ghi lại các reuqest đăng nhập mỗi ngày trong 1 file thực hiện trong thư mục `log/` sử dụng các
 
+Nên dùng cách này.
+
 [file-stream-rotator module](https://www.npmjs.com/package/file-stream-rotator).
 
 
@@ -391,10 +393,7 @@ app.get('/', function (req, res) {
 
 ### use custom token formats
 
-
-
 Sample app that will use custom token formats. This adds an ID to all requests and displays it using the `:id` token.
-
 
 Ứng dụng mẫu mà sẽ sử dụng định dạng tùy chỉnh token. Điều này thêm một ID cho tất cả các yêu cầu và hiển thị nó bằng cách sử dụng `:id`.
 
