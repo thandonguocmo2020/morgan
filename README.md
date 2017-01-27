@@ -69,7 +69,23 @@ Standard Apache combined log output.
 :remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
 ```
 
-ví dụ url trong cmd sẽ hiển thị đây đủ như :
+ví dụ :
+
+var morgan = require("morgan");
+
+app.use(morgan("short"));
+
+app.get("/",function(req,res){
+
+    console.log("hello morgan");
+    res.end();
+
+});
+
+
+url trong cmd sẽ hiển thị đây đủ như :
+
+
 
 C:\Users\IT\Desktop\testMorgan>node index.js
 hello morgan
@@ -104,11 +120,20 @@ codes, cyan for redirection codes, and uncolored for all other codes.
 
 ##### short
 
+
 Shorter than default, also including response time.
 
 ```
 :remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms
 ```
+
+ví dụ :
+
+
+
+C:\Users\IT\Desktop\testMorgan>node index.js
+::1 - GET / HTTP/1.1 200 - - 4.574 ms
+
 
 ##### tiny
 
