@@ -372,7 +372,7 @@ var path = require('path')
 var app = express()
 var logDirectory = path.join(__dirname, 'log')
 
-// ensure log directory exists
+// ensure log directory exists Đảm bảo thư mục log tồn tại 
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)
 
 // create a rotating write stream
