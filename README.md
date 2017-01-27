@@ -359,6 +359,14 @@ Một ứng dụng đơn giản mà ghi lại các reuqest đăng nhập mỗi n
 
 Nên dùng cách này.
 
+sẽ được kết quả trong file log ghi phân tích cách request đến :
+
+::1 - - [27/Jan/2017:08:01:36 +0000] "GET / HTTP/1.1" 200 13 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/60.4.136 Chrome/54.4.2840.136 Safari/537.36"
+::1 - - [27/Jan/2017:08:04:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/60.4.136 Chrome/54.4.2840.136 Safari/537.36"
+::1 - - [27/Jan/2017:08:05:01 +0000] "GET /use HTTP/1.1" 404 16 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/60.4.136 Chrome/54.4.2840.136 Safari/537.36"
+::1 - - [27/Jan/2017:08:05:07 +0000] "GET /user HTTP/1.1" 200 17 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/60.4.136 Chrome/54.4.2840.136 Safari/537.36"
+
+
 [file-stream-rotator module](https://www.npmjs.com/package/file-stream-rotator).
 
 
