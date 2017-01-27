@@ -69,6 +69,13 @@ Standard Apache combined log output.
 :remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
 ```
 
+ví dụ url trong cmd sẽ hiển thị đây đủ như :
+
+C:\Users\IT\Desktop\testMorgan>node index.js
+hello morgan
+::1 - - [27/Jan/2017:03:19:00 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/60.4.136 Chrome/54.4.2840.136 Safari/537.36"
+
+
 ##### common
 
 Standard Apache common log output.
@@ -78,6 +85,12 @@ Standard Apache common log output.
 ```
 :remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length]
 ```
+
+ví dụ 
+
+C:\Users\IT\Desktop\testMorgan>node index.js
+hello morgan
+::1 - - [27/Jan/2017:03:21:05 +0000] "GET / HTTP/1.1" 200 
 
 ##### dev
 
